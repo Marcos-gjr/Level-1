@@ -1,17 +1,57 @@
-# Projeto_Level1 - Em Andamento...
+# Level 1 - Assistente de IA Especialista
 
-Nivel1 é um sistema de helpdesk desenvolvido como projeto final do curso de Engenharia de Software no Centro Universitário Católica de Santa Catarina em Joinville. Utilizando inteligência artificial como um técnico de nível 1, o sistema permitirá com que os usuários clientes abram tickets e recebam, assim que fizerem, pré resoluções iniciais e de fácil entendimento, para que possam mesmo possuindo conhecimento mínimo. Ao mesmo tempo, irá gerar o ticket juntamente com soluções de nível técnico à equipe de suporte, aprimorando-se continuamente com base em tickets resolvidos anteriormente para oferecer soluções mais rápidas e eficazes a problemas semelhantes no futuro.
+Este repositório é dedicado ao projeto **Level 1**, uma solução de software que implementa um assistente de IA especialista com base em documentos fornecidos pelo usuário. O sistema utiliza uma arquitetura RAG (Geração Aumentada por Recuperação) para permitir que usuários "conversem" com seus próprios documentos (PDFs e URLs), obtendo respostas precisas e contextuais. A documentação completa do projeto, incluindo detalhes de arquitetura e guias, pode ser encontrada na [Wiki deste repositório](https://github.com/Marcos-gjr/Level-1/wiki).
 
+##  Funcionalidades Principais
 
+* **Base de Conhecimento Customizável**: Permite que o usuário faça o upload de múltiplos documentos em formato PDF ou insira links de conteúdo web para criar uma base de conhecimento temporária e especializada.
+* **Interação Inteligente via Chat**: Oferece uma interface de chat intuitiva, desenvolvida com Streamlit, onde o usuário pode fazer perguntas em linguagem natural e receber respostas rápidas e diretas.
+* **Respostas Precisas com RAG**: Garante que todas as respostas sejam estritamente baseadas no conteúdo dos documentos fornecidos, utilizando um pipeline RAG com a API da OpenAI para embeddings e FAISS para busca vetorial, mitigando o risco de informações incorretas.
+* **Feedback de Status em Tempo Real**: O sistema informa visualmente ao usuário quando os documentos estão sendo processados, garantindo transparência sobre o que está acontecendo no backend.
 
-### Level 1 - Seu Copiloto e Suporte Técnico
-Este repositório é dedicado à documentação do projeto Level One - Seu Copiloto e Suporte Técnico. 
+##  Licença
 
-Para obter mais detalhes sobre o desenvolvimento de funcionalidades e o código-fonte do sistema, consulte os links úteis abaixo.
+Este projeto está licenciado sob a [Licença MIT](https://github.com/Marcos-gjr/Level-1/blob/main/LICENSE).
 
-### Funcionalidades Principais
+##  Stack Tecnológica
 
+O projeto como um todo faz uso das seguintes tecnologias:
 
-### Stack utilizada
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
+  <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+</div>
 
-### Repositórios
+### **Backend**
+* **Python**: Linguagem de programação principal, escolhida por sua simplicidade e pelo vasto ecossistema de bibliotecas para IA e desenvolvimento web.
+* **Flask & Flask-RESTX**: Frameworks para a construção da API REST, escolhidos pela leveza e pela facilidade de documentação automática com Swagger (OpenAPI).
+* **OpenAI API**: Utilizada para gerar os *embeddings* vetoriais (`text-embedding-3-large`) e para a geração final das respostas com o modelo de chat (`gpt-3.5-turbo`).
+* **FAISS (Facebook AI Similarity Search)**: Biblioteca para busca de similaridade em vetores de alta dimensão, utilizada como o motor do nosso índice de busca semântica.
+* **Pdfplumber & BeautifulSoup**: Bibliotecas para extração de texto de arquivos PDF e de conteúdo HTML de URLs, respectivamente.
+
+### **Frontend**
+* **Python com Streamlit**: Framework open-source para a criação rápida de interfaces web interativas e data apps, utilizado para construir a interface de chat.
+
+### **Infraestrutura e Deploy**
+* **AWS (Amazon Web Services)**: Plataforma de nuvem utilizada para o deploy e hospedagem das aplicações de backend e frontend através do serviço **Elastic Beanstalk**.
+
+##  Ferramentas de Desenvolvimento
+
+* **GitHub Actions (CI/CD)**: Ferramenta de automação para criar os pipelines de Integração Contínua (CI) e Entrega Contínua (CD), automatizando o deploy na AWS.
+* **SonarCloud**: Plataforma de análise estática de código para identificar vulnerabilidades e manter a qualidade do código nos repositórios.
+* **Pytest**: Framework para a escrita e execução de testes unitários e de integração em Python, utilizado em ambos os projetos.
+
+##  Links
+
+* **Documentação do Projeto:**
+    * [Wiki](https://github.com/Marcos-gjr/Level-1/wiki) - Guias detalhados, arquitetura e documentação completa.
+    * [Documentação da API (Swagger UI)](http://<seu-link-do-backend-na-aws>/docs) - Interface interativa para testar os endpoints da API.
+* **Repositórios:**
+    * [Backend](https://github.com/Marcos-gjr/backend-level-1) - Repositório do código da API em Flask.
+    * [Frontend](https://github.com/Marcos-gjr/frontend-level-1) - Repositório do código da interface em Streamlit.
+* **Monitoramento da Qualidade:**
+    * [SonarCloud - Backend](https://sonarcloud.io/project/overview?id=Marcos-gjr_backend-level-1) - Análise de qualidade do código do backend.
+    * [SonarCloud - Frontend](https://sonarcloud.io/project/overview?id=Marcos-gjr_frontend-level-1) - Análise de qualidade do código do frontend.
