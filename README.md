@@ -17,15 +17,16 @@ Este projeto está licenciado sob a [Licença MIT](https://github.com/Marcos-gjr
 
 O projeto como um todo faz uso das seguintes tecnologias:
 
-<div align="center">
+<div align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
   <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
 </div>
 
 ### **Backend**
+<a href="https://sonarcloud.io/project/overview?id=Marcos-gjr_backend-level-1" target="_blank"><img src="https://img.shields.io/sonar/quality_gate/Marcos-gjr_backend-level-1?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge&logo=sonarcloud" alt="SonarCloud Quality Gate"/></a>
 * **Python**: Linguagem de programação principal, escolhida por sua simplicidade e pelo vasto ecossistema de bibliotecas para IA e desenvolvimento web.
 * **Flask & Flask-RESTX**: Frameworks para a construção da API REST, escolhidos pela leveza e pela facilidade de documentação automática com Swagger (OpenAPI).
 * **OpenAI API**: Utilizada para gerar os *embeddings* vetoriais (`text-embedding-3-large`) e para a geração final das respostas com o modelo de chat (`gpt-3.5-turbo`).
@@ -33,12 +34,17 @@ O projeto como um todo faz uso das seguintes tecnologias:
 * **Pdfplumber & BeautifulSoup**: Bibliotecas para extração de texto de arquivos PDF e de conteúdo HTML de URLs, respectivamente.
 
 ### **Frontend**
+<a href="https://sonarcloud.io/project/overview?id=Marcos-gjr_backend-level-1" target="_blank"><img src="https://img.shields.io/sonar/quality_gate/Marcos-gjr_frontend-level-1?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge&logo=sonarcloud" alt="SonarCloud Quality Gate"/></a>
+  
 * **Python com Streamlit**: Framework open-source para a criação rápida de interfaces web interativas e data apps, utilizado para construir a interface de chat.
 
 ### **Infraestrutura e Deploy**
+<img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
 * **AWS (Amazon Web Services)**: Plataforma de nuvem utilizada para o deploy e hospedagem das aplicações de backend e frontend através do serviço **Elastic Beanstalk**.
 
 ##  Ferramentas de Desenvolvimento
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
+</div>
 
 * **GitHub Actions (CI/CD)**: Ferramenta de automação para criar os pipelines de Integração Contínua (CI) e Entrega Contínua (CD), automatizando o deploy na AWS.
 * **SonarCloud**: Plataforma de análise estática de código para identificar vulnerabilidades e manter a qualidade do código nos repositórios.
