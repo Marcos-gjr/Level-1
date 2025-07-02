@@ -1,6 +1,6 @@
 # Level 1 - Assistente de IA Especialista
 
-Este repositório é dedicado ao projeto **Level 1**, uma solução de software que implementa um assistente de IA especialista com base em documentos fornecidos pelo usuário. O sistema utiliza uma arquitetura RAG (Geração Aumentada por Recuperação) para permitir que usuários "conversem" com seus próprios documentos (PDFs e URLs), obtendo respostas precisas e contextuais. A documentação completa do projeto, incluindo detalhes de arquitetura e guias, pode ser encontrada na [Wiki deste repositório](https://github.com/Marcos-gjr/Level-1/wiki).
+Este repositório é dedicado ao projeto **Level 1**, uma solução de software que implementa um assistente de IA especialista com base em documentos fornecidos pelo usuário. O sistema utiliza uma arquitetura RAG (Geração Aumentada por Recuperação) mais LLM (Modelos de linguagem de grande escala) para permitir que os usuários "conversem" com seus próprios documentos após realizarem o upload deles via PDFs ou URLs, obtendo respostas melhor contextualizadas e de forma mais dinâmica a partir da própria documentação fornecida. A documentação completa do projeto, incluindo detalhes de arquitetura e guias, pode ser encontrada na [Wiki deste repositório](https://github.com/Marcos-gjr/Level-1/wiki).
 
 ##  Funcionalidades Principais
 
@@ -8,10 +8,6 @@ Este repositório é dedicado ao projeto **Level 1**, uma solução de software 
 * **Interação Inteligente via Chat**: Oferece uma interface de chat intuitiva, desenvolvida com Streamlit, onde o usuário pode fazer perguntas em linguagem natural e receber respostas rápidas e diretas.
 * **Respostas Precisas com RAG**: Garante que todas as respostas sejam estritamente baseadas no conteúdo dos documentos fornecidos, utilizando um pipeline RAG com a API da OpenAI para embeddings e FAISS para busca vetorial, mitigando o risco de informações incorretas.
 * **Feedback de Status em Tempo Real**: O sistema informa visualmente ao usuário quando os documentos estão sendo processados, garantindo transparência sobre o que está acontecendo no backend.
-
-##  Licença
-
-Este projeto está licenciado sob a [Licença MIT](https://github.com/Marcos-gjr/Level-1/blob/main/LICENSE).
 
 ##  Stack Tecnológica
 
@@ -40,6 +36,7 @@ O projeto como um todo faz uso das seguintes tecnologias:
 
 ### **Infraestrutura e Deploy**
 <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" />
+
 * **AWS (Amazon Web Services)**: Plataforma de nuvem utilizada para o deploy e hospedagem das aplicações de backend e frontend através do serviço **Elastic Beanstalk**.
 
 ##  Ferramentas de Desenvolvimento
@@ -54,10 +51,15 @@ O projeto como um todo faz uso das seguintes tecnologias:
 
 * **Documentação do Projeto:**
     * [Wiki](https://github.com/Marcos-gjr/Level-1/wiki) - Guias detalhados, arquitetura e documentação completa.
-    * [Documentação da API (Swagger UI)](http://<seu-link-do-backend-na-aws>/docs) - Interface interativa para testar os endpoints da API.
+    <!-- * [Documentação da API (Swagger UI)](http://<seu-link-do-backend-na-aws>/docs) - Interface interativa para testar os endpoints da API. -->
 * **Repositórios:**
     * [Backend](https://github.com/Marcos-gjr/backend-level-1) - Repositório do código da API em Flask.
     * [Frontend](https://github.com/Marcos-gjr/frontend-level-1) - Repositório do código da interface em Streamlit.
 * **Monitoramento da Qualidade:**
     * [SonarCloud - Backend](https://sonarcloud.io/project/overview?id=Marcos-gjr_backend-level-1) - Análise de qualidade do código do backend.
     * [SonarCloud - Frontend](https://sonarcloud.io/project/overview?id=Marcos-gjr_frontend-level-1) - Análise de qualidade do código do frontend.
+ 
+##  Licença
+
+Este projeto está licenciado sob a [Licença MIT](https://github.com/Marcos-gjr/Level-1/blob/main/LICENSE).
+
