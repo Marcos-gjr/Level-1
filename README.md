@@ -46,6 +46,7 @@ O projeto como um todo faz uso das seguintes tecnologias:
 * **GitHub Actions (CI/CD)**: Ferramenta de automação para criar os pipelines de Integração Contínua (CI) e Entrega Contínua (CD), automatizando o deploy na AWS.
 * **SonarCloud**: Plataforma de análise estática de código para identificar vulnerabilidades e manter a qualidade do código nos repositórios.
 * **Pytest**: Framework para a escrita e execução de testes unitários e de integração em Python, utilizado em ambos os projetos.
+* **AWS CloudWatch:** Serviço de monitoramento e observabilidade da AWS. No projeto, é utilizado para coletar e centralizar os logs da aplicação e monitorar as métricas de desempenho da infraestrutura no Elastic Beanstalk.
 
 ##  Links
 
